@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<scroll-view scroll-y class="container">
+
+  <button bindtap='savefiles'>ee.doc  </button>
+  <view>
+      <view wx:for="{{items}}" wx:key="index" wx:for-item="item">
+          <view bindtap='openfile' data-path="{{item.path}}">{{item.file}}              </view>
+      </view>
+  </view>
+
+</scroll-view>
