@@ -14,7 +14,13 @@ static-download为小程序项目，
 
 node-download为node项目，node-download目录下upload目录下载的资源文件
 
-**若要启用node服务 ( 记得更改服务器地址为本机IP哦 )**  1 cd/到node-download  2 cnpm install （安装依赖）  3 node app.js （启动node服务）
+**若要启用node服务 ( 记得更改服务器地址为本机IP哦 )**  
+
+1 cd/到node-download  
+
+2 cnpm install （安装依赖）  
+
+3 node app.js （启动node服务）
 
 
 ![示例](https://github.com/fancaixia/wxDownLoad/blob/master/pic/001.png)
