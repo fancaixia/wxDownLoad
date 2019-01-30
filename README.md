@@ -1,9 +1,10 @@
 ### wxDownLoad 小程序中文件下载
 
 **注：页面请求文件为 node-download/upload 目录下的文件 ，可自行修改**
+
 ![https://github.com/fancaixia/wxDownLoad/blob/master/pic/001.png](https://github.com/fancaixia/wxDownLoad/blob/master/pic/001.png)
 
-#####基本思路
+##### 基本思路
 1. wx.onload中读取服务器文件列表 和缓存到本地的文件列表
 
 2. 文件下载：
@@ -18,7 +19,7 @@
 
     点击已下载的文件可根据路径data-path打开查看
 
-###示例代码
+### 示例代码
 ```
 <scroll-view scroll-y class="container">
 
@@ -45,7 +46,7 @@ Page({
   },
 ```
 
-#####读取本地缓存文件
+##### 读取本地缓存文件
 ```
   getLocalFiles(manager, $this) {
     manager.readdir({
@@ -69,7 +70,7 @@ Page({
     })
   },
 ```
-#####下载文件
+##### 下载文件
 ```
 wx.downloadFile({
       url: serverAddress.url + '/' + fileName,   
@@ -128,7 +129,7 @@ wx.downloadFile({
       }
     })
 ```
-#####下载后打开文件
+##### 下载后打开文件
 ```
 openfile(e){
       // console.log(e, " e:frkrkookr")
@@ -146,14 +147,14 @@ openfile(e){
 
 })
 ```
-###项目启动
+### 项目启动
 1. static-download为小程序项目，
 2. node-download为服务端项目，node-download目录下upload目录为下载的资源文件
 3. 启动node服务  
-cd/node-download 
-修改config.js  中的 请求地址为本机IP
-cnpm install （安装依赖） 
-node app.js （启动node服务）
+  - cd/node-download 
+  - 修改config.js  中的 请求地址为本机IP
+  - cnpm install （安装依赖） 
+  - node app.js （启动node服务）
 
 
 
