@@ -1,25 +1,22 @@
 /* reset */
-page {
-  font-size: 32rpx;
-  line-height: 1.6;
-  background-color: #f8f8f8;
-  height: 100%;
-  font-family: -apple-system-font, Helvetica Neue, sans-serif;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-}
-
-button {
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
-}
-
 .container {
   position: relative;
-  height: 100%;
   box-sizing: border-box;
-  background-color: #ededed;
-  background: linear-gradient(to bottom, #7aa3d7, #3c506f);
+  padding: 0 32rpx;
+}
+.defaultfile{
+  margin-top: 100rpx;
+  margin-top: 20rpx;
+}
+.fileText {
+  margin-bottom: 20rpx;
+  color: rgba(102, 153, 255, 1);
+  text-decoration:underline;
+}
+.downloadbox{
+  margin-top: 40rpx;
+  font-size: 28rpx;
+}
+.download{
+  text-decoration:underline;
 }

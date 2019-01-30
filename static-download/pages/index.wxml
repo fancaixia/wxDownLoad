@@ -1,10 +1,16 @@
 <!--index.wxml-->
 <scroll-view scroll-y class="container">
 
-  <button bindtap='savefiles'>ee.doc  </button>
-  <view>
-      <view wx:for="{{items}}" wx:key="index" wx:for-item="item">
-          <view bindtap='openfile' data-path="{{item.path}}">{{item.file}}              </view>
+ <view class='defaultfile'>
+        <view wx:for="{{defaultfiles}}" wx:key="index" wx:for-item="item">
+          <view class="fileText" data-name="{{item}}" bindtap='savefiles'>{{item}}       </view>
+        </view>
+ </view>  
+
+  <view class='downloadbox'>
+      <view wx:if="{{downloadFile.length>0}}">下载到本地的文件列表: </view>
+      <view wx:for="{{downloadFile}}" wx:key="index" wx:for-item="item">
+          <view bindtap='openfile' class='download' data-path="{{item.path}}">{{item.file}}              </view>
       </view>
   </view>
 
