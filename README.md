@@ -152,9 +152,9 @@ openfile(e){
 2. node-download为服务端项目，node-download目录下upload目录为下载的资源文件
 3. 启动node服务  
   - cd/node-download 
-  - 修改config.js  中的 请求地址为本机IP
+  - 没有安装nodemon 需 npm install -g nodemon
   - cnpm install （安装依赖） 
-  - node app.js （启动node服务）
+  - npm run dev （启动node服务）
 
 
 
